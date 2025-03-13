@@ -1,0 +1,130 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+    background: url('https://i.pinimg.com/736x/a1/e0/ff/a1e0ff2132630ef3ed23d685614e2184.jpg') no-repeat center center/cover;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Form styling */
+form {
+    background: rgba(255, 255, 255, 0.2);
+    padding: 20px;
+    border-radius: 10px;
+    width: 300px;
+    margin: auto;
+}
+
+input, textarea {
+    width: 90%;
+    padding: 10px;
+    margin: 5px;
+}
+
+button {
+    padding: 10px;
+    border: none;
+    background: coral;
+    color: white;
+    cursor: pointer;
+}
+
+button:hover {
+    background: darkorange;
+}
+
+/* Register Container */
+.register-container, .home-container {
+    background: rgba(255, 255, 255, 0.2);
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    text-align: center;
+    width: 350px;
+    backdrop-filter: blur(10px);
+}
+
+/* Typing Animation */
+.typing::after {
+    content: '|';
+    animation: blink 1s infinite;
+}
+
+@keyframes blink {
+    50% { opacity: 0; }
+}
+
+/* Input box */
+.input-box {
+    margin: 10px 0;
+}
+
+.input-box input {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 20px;
+    outline: none;
+    font-size: 16px;
+}
+
+/* Aesthetic Buttons */
+.btn {
+    display: block;
+    background: linear-gradient(90deg, #ff416c, #ff4b2b);
+    border: none;
+    color: white;
+    padding: 12px;
+    font-size: 18px;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: 0.3s ease;
+    margin: 10px auto;
+    width: 200px;
+    text-align: center;
+    text-decoration: none;
+}
+
+.btn:hover {
+    background: linear-gradient(90deg, #ff4b2b, #ff416c);
+    transform: scale(1.1);
+}
+
+/* Options Section */
+.options {
+    margin-top: 20px;
+}
+
+/* Logout Button */
+.logout {
+    display: inline-block;
+    margin-top: 15px;
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.logout:hover {
+    text-decoration: underline;
+}
+.creator-label {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+    padding: 10px 15px;
+    border-radius: 20px;
+    font-size: 14px;
+    font-weight: bold;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.creator-label:hover {
+    background: rgba(255, 255, 255, 0.3);
+    transform: scale(1.1);
+}
